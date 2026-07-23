@@ -121,8 +121,8 @@ function renderTable(data) {
                 <td>
                     <img src="${book.imageUrl}" class="book-image">
                 </td>
-                <td class="url-cell">${book.imageUrl}</td>
                 <td>${book.title}</td>
+                <td class="synopsis-cell">${book.synopsis}</td>
                 <td>${book.genres.join(', ')}</td>
                 <td>${book.language}</td>
                 <td>
