@@ -210,6 +210,33 @@ function deleteBook(index) {
 
 
 // ===============================================
+// SEARCH — filter buku berdasarkan id, judul, atau genre
+// ===============================================
+document.getElementById('searchInput').addEventListener('input', function (e) {
+    const keyword = e.target.value.toLowerCase().trim();
+
+    // Kalau kosong, tampilkan semua buku lagi
+    if (keyword === '') {
+        renderTable(books);
+        return;
+    }
+
+    // Filter berdasarkan id, judul, ATAU genre yang cocok dengan keyword
+    const filteredBooks = books.filter(function (book) {
+        return (
+            book.id.toLowerCase().includes(keyword) ||
+            book.title.toLowerCase().includes(keyword) ||
+            book.genres.some(function (genre) {
+                return genre.toLowerCase().includes(keyword);
+            })
+        );
+    });
+
+    renderTable(filteredBooks);
+});
+
+
+// ===============================================
 // CATATAN PENTING
 // ===============================================
 // 1. File books.json TIDAK PERNAH diubah oleh kode ini.
