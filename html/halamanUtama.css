@@ -1,0 +1,118 @@
+/* ===========================
+   GLOBAL
+=========================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: url("foto-perpustakaan/perpuscuyyy.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand,
+.navbar .nav-link {
+    font-weight: 500;
+}
+
+
+/* ===========================
+   LOGIN
+=========================== */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+
+/* ===========================
+   IMAGE SLIDE / CAROUSEL
+=========================== */
+.carousel {
+    width: 700px;
+    margin: 30px auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.carousel-item a {
+    display: block;
+}
+
+.carousel-item img {
+    cursor: pointer;
+}
+
+/* Card yang ada di dalam carousel */
+.carousel .card {
+    background-color: #C68E4E;
+    
+    border: none;
+}
+
+.carousel .card-body {
+    background: transparent;
+}
+
+
+/* ===========================
+   DAFTAR BUKU
+=========================== */
+.book-card {
+    transition: 0.3s;
+    border: none;
+    border-radius: 12px;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.book-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-card .card-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.book-card .btn-primary {
+    width: 100%;
+}
+
+
+.judul-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.judul-halaman {
+    display: inline-block;
+    background-color: #C68E4E;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 12px;
+    
+}
