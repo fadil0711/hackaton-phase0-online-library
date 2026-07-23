@@ -104,8 +104,8 @@ body{
 
 .synopsis-cell{
     max-width:300px;
-    font-size:13px;
     font-family:inherit;
+    font-size:inherit;
     text-align:left;
     display:-webkit-box;
     -webkit-line-clamp:2;
