@@ -1,0 +1,202 @@
+[
+  {
+    "id": "author-1",
+    "name": "J.K. Rowling",
+    "about": "Penulis Inggris yang terkenal lewat serial Harry Potter."
+  },
+  {
+    "id": "author-2",
+    "name": "J.R.R. Tolkien",
+    "about": "Penulis dan akademisi Inggris, bapak sastra fantasi modern."
+  },
+  {
+    "id": "author-3",
+    "name": "George Orwell",
+    "about": "Penulis dan jurnalis Inggris, dikenal lewat karya-karya distopia politiknya."
+  },
+  {
+    "id": "author-4",
+    "name": "Harper Lee",
+    "about": "Penulis Amerika yang dikenal lewat novel klasik tentang keadilan sosial."
+  },
+  {
+    "id": "author-5",
+    "name": "Jane Austen",
+    "about": "Novelis Inggris abad ke-19, dikenal lewat karya-karya bertema sosial dan romansa."
+  },
+  {
+    "id": "author-6",
+    "name": "F. Scott Fitzgerald",
+    "about": "Penulis Amerika, tokoh penting era Jazz Age dalam sastra Amerika."
+  },
+  {
+    "id": "author-7",
+    "name": "Herman Melville",
+    "about": "Penulis Amerika abad ke-19, dikenal lewat novel epik tentang laut."
+  },
+  {
+    "id": "author-8",
+    "name": "Leo Tolstoy",
+    "about": "Penulis Rusia, salah satu novelis terbesar dalam sejarah sastra dunia."
+  },
+  {
+    "id": "author-9",
+    "name": "Fyodor Dostoevsky",
+    "about": "Penulis Rusia yang dikenal lewat eksplorasi psikologi manusia dalam karyanya."
+  },
+  {
+    "id": "author-10",
+    "name": "J.D. Salinger",
+    "about": "Penulis Amerika, dikenal lewat novel ikonik tentang masa remaja."
+  },
+  {
+    "id": "author-11",
+    "name": "Aldous Huxley",
+    "about": "Penulis Inggris yang dikenal lewat karya distopia fiksi ilmiahnya."
+  },
+  {
+    "id": "author-12",
+    "name": "Ray Bradbury",
+    "about": "Penulis Amerika, dikenal sebagai salah satu tokoh besar fiksi ilmiah abad ke-20."
+  },
+  {
+    "id": "author-13",
+    "name": "C.S. Lewis",
+    "about": "Penulis dan akademisi Inggris, pencipta dunia Narnia."
+  },
+  {
+    "id": "author-14",
+    "name": "Paulo Coelho",
+    "about": "Penulis Brasil yang dikenal lewat novel-novel filosofis dan spiritualnya."
+  },
+  {
+    "id": "author-15",
+    "name": "Dan Brown",
+    "about": "Penulis Amerika, dikenal lewat novel-novel thriller misteri konspirasi."
+  },
+  {
+    "id": "author-16",
+    "name": "Stieg Larsson",
+    "about": "Jurnalis dan penulis Swedia, terkenal lewat trilogi Millennium."
+  },
+  {
+    "id": "author-17",
+    "name": "Gillian Flynn",
+    "about": "Penulis Amerika yang dikenal lewat novel-novel psychological thriller."
+  },
+  {
+    "id": "author-18",
+    "name": "Suzanne Collins",
+    "about": "Penulis Amerika, dikenal lewat trilogi distopia young adult."
+  },
+  {
+    "id": "author-19",
+    "name": "Veronica Roth",
+    "about": "Penulis Amerika yang dikenal lewat trilogi Divergent."
+  },
+  {
+    "id": "author-20",
+    "name": "John Green",
+    "about": "Penulis Amerika yang dikenal lewat novel-novel young adult bertema kehidupan remaja."
+  },
+  {
+    "id": "author-21",
+    "name": "Stephenie Meyer",
+    "about": "Penulis Amerika, dikenal lewat serial romansa fantasi Twilight."
+  },
+  {
+    "id": "author-22",
+    "name": "Khaled Hosseini",
+    "about": "Penulis Amerika kelahiran Afghanistan, dikenal lewat novel-novel bertema persahabatan dan penebusan."
+  },
+  {
+    "id": "author-23",
+    "name": "Yann Martel",
+    "about": "Penulis Kanada yang dikenal lewat novel filosofis tentang bertahan hidup."
+  },
+  {
+    "id": "author-24",
+    "name": "Markus Zusak",
+    "about": "Penulis Australia, dikenal lewat novel bertema Perang Dunia II."
+  },
+  {
+    "id": "author-25",
+    "name": "Yuval Noah Harari",
+    "about": "Sejarawan dan penulis asal Israel, dikenal lewat buku-buku non-fiksi populer."
+  },
+  {
+    "id": "author-26",
+    "name": "Tara Westover",
+    "about": "Penulis Amerika yang dikenal lewat memoar tentang pendidikan dan keluarga."
+  },
+  {
+    "id": "author-27",
+    "name": "James Clear",
+    "about": "Penulis dan pembicara Amerika yang fokus pada kebiasaan dan produktivitas."
+  },
+  {
+    "id": "author-28",
+    "name": "Mark Manson",
+    "about": "Penulis dan blogger Amerika yang dikenal lewat tulisan self-help kontroversialnya."
+  },
+  {
+    "id": "author-29",
+    "name": "Robert Kiyosaki",
+    "about": "Pengusaha dan penulis Amerika yang fokus pada literasi keuangan."
+  },
+  {
+    "id": "author-30",
+    "name": "Daniel Kahneman",
+    "about": "Psikolog dan ekonom pemenang Nobel, dikenal lewat riset pengambilan keputusan."
+  },
+  {
+    "id": "author-31",
+    "name": "Eric Ries",
+    "about": "Pengusaha dan penulis Amerika, dikenal lewat metodologi startup modern."
+  },
+  {
+    "id": "author-32",
+    "name": "Walter Isaacson",
+    "about": "Penulis biografi Amerika, mantan editor Time Magazine."
+  },
+  {
+    "id": "author-33",
+    "name": "Frank Herbert",
+    "about": "Penulis Amerika, dikenal lewat seri fiksi ilmiah epik Dune."
+  },
+  {
+    "id": "author-34",
+    "name": "Isaac Asimov",
+    "about": "Penulis dan biokimiawan Amerika, salah satu tokoh besar fiksi ilmiah."
+  },
+  {
+    "id": "author-35",
+    "name": "Orson Scott Card",
+    "about": "Penulis Amerika yang dikenal lewat novel fiksi ilmiah bertema strategi dan perang."
+  },
+  {
+    "id": "author-36",
+    "name": "Andy Weir",
+    "about": "Penulis Amerika, dikenal lewat novel fiksi ilmiah bertema bertahan hidup di luar angkasa."
+  },
+  {
+    "id": "author-37",
+    "name": "Ernest Cline",
+    "about": "Penulis Amerika yang dikenal lewat novel fiksi ilmiah bertema budaya pop dan game."
+  },
+  {
+    "id": "author-38",
+    "name": "Haruki Murakami",
+    "about": "Penulis Jepang yang dikenal lewat karya-karya bernuansa surealis dan melankolis."
+  },
+  {
+    "id": "author-39",
+    "name": "Antoine de Saint-Exupéry",
+    "about": "Penulis dan pilot Prancis, dikenal lewat karya klasik anak-anak dan filosofis."
+  },
+  {
+    "id": "author-40",
+    "name": "Gabriel García Márquez",
+    "about": "Penulis Kolombia pemenang Nobel Sastra, tokoh utama realisme magis."
+  }
+]
