@@ -96,6 +96,12 @@ body{
     box-shadow:0 0 8px rgba(25,135,84,.25);
 }
 
+.form-control[readonly]{
+    background-color:#e9ecef;
+    color:#6c757d;
+    cursor:not-allowed;
+}
+
 /* search */
 #searchInput:focus {
     border-color: #0d6efd;

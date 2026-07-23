@@ -12,6 +12,13 @@ let editIndex = null;
 // cukup ubah di satu tempat ini saja.
 const STORAGE_KEY = 'books';
 
+// Bikin input "Book ID" tidak bisa diketik/diubah manual oleh user,
+// baik saat mode Tambah maupun Edit. Ini dijalankan sekali saja
+// saat script dimuat (readOnly = true akan terus berlaku seterusnya).
+// (readOnly dipakai, bukan disabled, supaya value-nya tetap terbaca
+// lewat document.getElementById('bookId').value saat form di-submit)
+document.getElementById('bookId').readOnly = true;
+
 
 // ===============================================
 // LOAD DATA — localStorage dulu, baru fallback ke books.json
@@ -63,6 +70,34 @@ function saveToLocalStorage() {
   // JSON.stringify() dipakai karena localStorage HANYA bisa
   // menyimpan string, sedangkan "books" adalah array of objects.
   localStorage.setItem(STORAGE_KEY, JSON.stringify(books));
+}
+
+
+// ===============================================
+// GENERATE ID — cari angka terakhir dari semua id "book-N",
+// lalu kembalikan id baru dengan angka + 1
+// ===============================================
+function generateNextId() {
+    // Kalau belum ada buku sama sekali, mulai dari book-1
+    if (books.length === 0) {
+        return 'book-1';
+    }
+
+    let maxNumber = 0;
+
+    books.forEach(function (book) {
+        // "book-12" di-split jadi ["book", "12"]
+        const parts = book.id.split('-');
+        const number = parseInt(parts[1], 10); // ambil bagian angkanya saja, ubah ke Number
+
+        // Simpan angka terbesar yang pernah ditemukan
+        if (!isNaN(number) && number > maxNumber) {
+            maxNumber = number;
+        }
+    });
+
+    // ID baru = angka terbesar + 1
+    return 'book-' + (maxNumber + 1);
 }
 
 
@@ -156,6 +191,32 @@ document.getElementById('bookForm').addEventListener('submit', function (e) {
 
 
 // ===============================================
+// MODAL EVENTS — atur id otomatis & reset state modal
+// ===============================================
+// "show.bs.modal" ini event bawaan Bootstrap yang otomatis terpicu
+// TEPAT SEBELUM modal muncul di layar — baik dipicu oleh tombol
+// "Add Book" (lewat data-bs-toggle di HTML) MAUPUN oleh editBook()
+// di bawah (yang manggil modal.show() secara manual).
+document.getElementById('bookModal').addEventListener('show.bs.modal', function () {
+    // Kalau editIndex masih null, artinya ini mode TAMBAH BARU
+    // (bukan hasil klik tombol Edit), jadi isi otomatis id berikutnya.
+    if (editIndex === null) {
+        document.getElementById('bookId').value = generateNextId();
+    }
+});
+
+// "hidden.bs.modal" terpicu TEPAT SETELAH modal selesai ditutup,
+// baik lewat Save, tombol X, klik di luar modal, atau tombol Cancel.
+// Ini penting: kalau user klik "Edit" lalu menutup modal TANPA submit,
+// editIndex akan tetap ke-set ke index lama. Reset di sini supaya
+// klik "Add Book" berikutnya benar-benar dianggap mode tambah baru.
+document.getElementById('bookModal').addEventListener('hidden.bs.modal', function () {
+    editIndex = null;
+    document.getElementById('bookForm').reset();
+});
+
+
+// ===============================================
 // EDIT — isi form modal dengan data buku yang mau diedit
 // ===============================================
 function editBook(index) {
@@ -226,7 +287,6 @@ document.getElementById('searchInput').addEventListener('input', function (e) {
         return (
             book.id.toLowerCase().includes(keyword) ||
             book.title.toLowerCase().includes(keyword) ||
-            book.language.toLowerCase().includes(keyword) ||
             book.genres.some(function (genre) {
                 return genre.toLowerCase().includes(keyword);
             })
