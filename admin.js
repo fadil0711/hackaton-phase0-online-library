@@ -226,6 +226,7 @@ document.getElementById('searchInput').addEventListener('input', function (e) {
         return (
             book.id.toLowerCase().includes(keyword) ||
             book.title.toLowerCase().includes(keyword) ||
+            book.language.toLowerCase().includes(keyword) ||
             book.genres.some(function (genre) {
                 return genre.toLowerCase().includes(keyword);
             })
