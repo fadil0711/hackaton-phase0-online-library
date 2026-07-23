@@ -29,14 +29,87 @@ body {
 }
 
 
-/* ===========================
-   LOGIN
-=========================== */
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
+/* ==========================
+   LOGIN MODAL
+========================== */
+
+.modal-content{
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+/* Header */
+
+.modal-header{
+    background: linear-gradient(135deg,#8B5E3C,#C68E4E);
+    color: white;
+    border-bottom: none;
+    padding: 18px 25px;
+}
+
+.modal-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-close{
+    filter: invert(1);
+}
+
+/* Body */
+
+.modal-body{
+    background: #fdfbf8;
+    padding: 35px;
+}
+
+.form-label{
+    font-weight: 600;
+    color: #5d4037;
+}
+
+.form-control{
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #d8c3a5;
+    transition: .3s;
+}
+
+.form-control:focus{
+    border-color: #C68E4E;
+    box-shadow: 0 0 8px rgba(198,142,78,.35);
+}
+
+/* Tombol */
+
+.btn-login{
+    background: linear-gradient(135deg,#8B5E3C,#C68E4E);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-login:hover{
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,.25);
+}
+
+/* Animasi */
+
+.modal.fade .modal-dialog{
+    transform: scale(.8);
+    transition: .3s;
+}
+
+.modal.show .modal-dialog{
+    transform: scale(1);
 }
 
 

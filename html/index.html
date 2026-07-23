@@ -2,7 +2,7 @@
 
 <head>
     <title>Halaman Utama</title>
-    <link rel="stylesheet" href="halamanUtama.css">
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -45,10 +45,13 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div class="d-flex">
+    <button class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal">
+        <i class="bi bi-person-circle"></i> Login
+    </button>
+</div>
             </div>
         </div>
     </nav>
@@ -67,6 +70,62 @@
     <div class="judul-container">
         <h1 class="judul-halaman">Buku Terpopuler</h1>
     </div>
+
+    <!-- Modal Login -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    Login Admin BukuKu
+                </h4>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Masukkan Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Masukkan Password">
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary w-100">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
 
     <!-- placeholder -->
     <div id="carouselExample" class="carousel slide w-50 mx-auto mt-4" data-bs-ride="carousel" data-bs-interval="3000">
