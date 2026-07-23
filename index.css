@@ -1,191 +1,108 @@
-/* ===========================
-   GLOBAL
-=========================== */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+/* Background */
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
 
-    background: url("foto-perpustakaan/perpuscuyyy.avif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* gambar background */
+    background:url("foto-perpustakaan/background-login.avif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-    min-height: 100vh;
+    min-height:100vh;
 }
 
-
-/* ===========================
-   NAVBAR
-=========================== */
-.navbar {
-    background: rgba(255, 255, 255, 0.08) !important;
-    backdrop-filter: blur(10px);
+/* Navbar */
+.navbar{
+    background:rgba(255,255,255,.08)!important;
+    backdrop-filter:blur(10px);
 }
 
-.navbar-brand,
-.navbar .nav-link {
-    font-weight: 500;
+.navbar .nav-link,
+.navbar-brand{
+    /* color:white!important; */
 }
 
+/* Container */
+.login-container{
 
-/* ==========================
-   LOGIN MODAL
-========================== */
-
-.modal-content{
-    border: none;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:85vh;
 }
 
-/* Header */
-
-.modal-header{
-    background: linear-gradient(135deg,#8B5E3C,#C68E4E);
-    color: white;
-    border-bottom: none;
-    padding: 18px 25px;
+/* Login Card */
+.login-card{
+    width:420px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.3);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 35px rgba(0,0,0,.45);
+    color:white;
 }
 
-.modal-title{
-    font-size: 24px;
-    font-weight: bold;
+/* Judul */
+.login-card h1{
+    font-weight:bold;
 }
 
-.btn-close{
-    filter: invert(1);
+/* Label */
+.login-card label{
+    margin-bottom:8px;
 }
 
-/* Body */
-
-.modal-body{
-    background: #fdfbf8;
-    padding: 35px;
+/* Input */
+.login-card .form-control{
+    background:transparent;
+    border:none;
+    border-bottom:2px solid rgba(255,255,255,.6);
+    border-radius:0;
+    color:white;
 }
 
-.form-label{
-    font-weight: 600;
-    color: #5d4037;
+.login-card .form-control:focus{
+    background:transparent;
+    color:white;
+    border-color:white;
+    box-shadow:none;
 }
 
-.form-control{
-    border-radius: 10px;
-    padding: 12px;
-    border: 1px solid #d8c3a5;
-    transition: .3s;
+.login-card .form-control::placeholder{
+    color:#ffffff;
 }
 
-.form-control:focus{
-    border-color: #C68E4E;
-    box-shadow: 0 0 8px rgba(198,142,78,.35);
+/* Link */
+.login-card a{
+    color:white;
+    text-decoration:none;
 }
 
-/* Tombol */
+.login-card a:hover{
+    color:#00d4ff;
+}
 
+/* Button */
 .btn-login{
-    background: linear-gradient(135deg,#8B5E3C,#C68E4E);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     color: white;
     border: none;
-    padding: 12px;
-    border-radius: 10px;
-    font-size: 17px;
+    border-radius: 30px;
+    padding: 10px;
     font-weight: bold;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .btn-login:hover{
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,.25);
+    background: linear-gradient(135deg, #0099ff, #0056d6);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,114,255,.4);
 }
 
-/* Animasi */
-
-.modal.fade .modal-dialog{
-    transform: scale(.8);
-    transition: .3s;
-}
-
-.modal.show .modal-dialog{
-    transform: scale(1);
-}
-
-
-/* ===========================
-   IMAGE SLIDE / CAROUSEL
-=========================== */
-.carousel {
-    width: 700px;
-    margin: 30px auto;
-}
-
-.carousel img {
-    width: 100%;
-    height: 350px;
-    object-fit: contain;
-}
-
-.carousel-item a {
-    display: block;
-}
-
-.carousel-item img {
-    cursor: pointer;
-}
-
-/* Card yang ada di dalam carousel */
-.carousel .card {
-    background-color: #C68E4E;
-    
-    border: none;
-}
-
-.carousel .card-body {
-    background: transparent;
-}
-
-
-/* ===========================
-   DAFTAR BUKU
-=========================== */
-.book-card {
-    transition: 0.3s;
-    border: none;
-    border-radius: 12px;
-}
-
-.book-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.3);
-}
-
-.book-card img {
-    height: 250px;
-    object-fit: cover;
-}
-
-.book-card .card-title {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.book-card .btn-primary {
-    width: 100%;
-}
-
-
-.judul-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.judul-halaman {
-    display: inline-block;
-    background-color: #C68E4E;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 12px;
-    
+/* Checkbox */
+input[type="checkbox"]{
+    accent-color:#00d4ff;
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <title>Halaman Utama</title>
+    <title>Halaman login</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -9,7 +10,7 @@
 
 <body>
     <!-- start nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary position-relative">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">BukuKu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -17,12 +18,6 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Jam benar-benar di tengah navbar -->
-            <span class="navbar-text fw-bold jam-tengah" id="jam-digital">
-                00:00:00
-            </span>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -34,447 +29,70 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Lainnya
+                            Dropdown
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Tentang Website</a></li>
-                            <li><a class="dropdown-item" href="#">Tentang Team</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
                 </ul>
-                <div class="d-flex">
-    <button class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#loginModal">
-        <i class="bi bi-person-circle"></i> Login
-    </button>
-</div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
+    <!-- end nav -->
 
-    <style>
-        .jam-tengah {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            white-space: nowrap;
-        }
-    </style>
+    <!-- card container -->
+    <div class="login-container">
+        <div class="login-card">
 
+            <h1 class="text-center mb-4">Login</h1>
 
-    <div class="judul-container">
-        <h1 class="judul-halaman">Buku Terpopuler</h1>
-    </div>
-
-    <!-- Modal Login -->
-<div class="modal fade" id="loginModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h4 class="modal-title">
-                    Login Admin BukuKu
-                </h4>
-
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
+            <div class="mb-4">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Masukkan Email">
             </div>
 
-            <div class="modal-body">
-
-                <form>
-
-                    <div class="mb-3">
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Masukkan Email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            class="form-control"
-                            placeholder="Masukkan Password">
-                    </div>
-
-
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary w-100">
-
-                        Login
-
-                    </button>
-
-                </form>
-
+            <div class="mb-3">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Masukkan Password">
             </div>
 
-        </div>
-
-    </div>
-</div>
-
-    <!-- placeholder -->
-    <div id="carouselExample" class="carousel slide w-50 mx-auto mt-4" data-bs-ride="carousel" data-bs-interval="3000">
-
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <div class="card">
-                    <img src="./foto-perpustakaan/negeri 5 negara.jpg" class="card-img-top" alt="Negeri 5 Menara">
-                    <div class="card-body">
-                        <h5 class="card-title">Negeri 5 Menara</h5>
-                        <p class="card-text">Novel karya A. Fuadi yang mengisahkan perjalanan enam santri di pondok
-                            pesantren dalam meraih mimpi mereka.</p>
-                        <a href="https://www.goodreads.com/book/show/6688121-negeri-5-menara" target="_blank"
-                            class="btn btn-primary">Baca Buku</a>
-                    </div>
+            <div class="d-flex justify-content-between mb-4">
+                <div>
+                    <input type="checkbox">
+                    Remember me
                 </div>
+
+                <a href="#">Forgot Password?</a>
             </div>
 
-            <div class="carousel-item">
-                <div class="card">
-                    <img src="./foto-perpustakaan/bumi manusia.jpg" class="card-img-top" alt="Bumi Manusia">
-                    <div class="card-body">
-                        <h5 class="card-title">Bumi Manusia</h5>
-                        <p class="card-text">Novel karya Pramoedya Ananta Toer yang mengangkat kisah perjuangan di masa
-                            kolonial Hindia Belanda.</p>
-                        <a href="https://www.goodreads.com/book/show/1398034.Bumi_Manusia" target="_blank"
-                            class="btn btn-primary">Baca Buku</a>
-                    </div>
-                </div>
-            </div>
+            <a href="halamanUtama.html" class="btn btn-login w-100">
+                Login
+            </a>
 
-            <div class="carousel-item">
-                <div class="card">
-                    <img src="./foto-perpustakaan/perahu kertas.jpg" class="card-img-top" alt="Perahu Kertas">
-                    <div class="card-body">
-                        <h5 class="card-title">Perahu Kertas</h5>
-                        <p class="card-text">Novel karya Dee Lestari yang mengisahkan perjalanan cinta dan pencarian
-                            jati diri dua tokoh utamanya.</p>
-                        <a href="https://www.goodreads.com/book/show/6765740-perahu-kertas" target="_blank"
-                            class="btn btn-primary">Baca Buku</a>
-                    </div>
-                </div>
-            </div>
+            <p class="text-center mt-4">
+                Don't have an account?
+                <a href="#">Register</a>
+            </p>
 
         </div>
     </div>
-    <!-- end placeholder -->
-
-    <!-- card daftar buku -->
-    <div class="container mt-5">
-
-        <div class="judul-container">
-            <h1 class="judul-halaman text-center mt-5 mb-4">📚 Koleksi Buku</h1>
-        </div>
-
-        <div class="row g-4">
-
-            <!-- 1 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/negeri 5 negara.jpg" class="card-img-top" alt="Negeri 5 Menara">
-                    <div class="card-body">
-                        <h6 class="card-title">Negeri 5 Menara</h6>
-                        <a href="https://www.goodreads.com/book/show/6688121-negeri-5-menara" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/bumi manusia.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h6>Bumi Manusia</h6>
-                        <a href="https://www.goodreads.com/book/show/1398034.Bumi_Manusia" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/perahu kertas.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Perahu Kertas</h6>
-                        <a href="https://www.goodreads.com/book/show/6765740-perahu-kertas" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/laskar-pelangi.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Laskar Pelangi</h6>
-                        <a href="https://www.goodreads.com/book/show/1362193.Laskar_Pelangi" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/anak-semua-bangsa.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Anak Semua Bangsa</h6>
-                        <a href="https://www.goodreads.com/book/show/1677677.Anak_Semua_Bangsa" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/cantik-itu-luka.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Cantik itu Luka</h6>
-                        <a href="https://www.goodreads.com/book/show/1353409.Cantik_itu_Luka" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/jejak-langkah.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Jejak Langkah</h6>
-                        <a href="https://www.goodreads.com/book/show/1677634.Jejak_Langkah" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/rumah-kaca.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Rumah Kaca</h6>
-                        <a href="https://www.goodreads.com/book/show/1677693.Rumah_Kaca" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 9 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/sang-pemimpi.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Sang Pemimpi</h6>
-                        <a href="https://www.goodreads.com/book/show/1407874.Sang_Pemimpi" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 10 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100">
-                    <img src="./foto-perpustakaan/pulang.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Pulang</h6>
-                        <a href="https://www.goodreads.com/book/show/16174176-pulang" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 11 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/saman.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Saman</h6><a href="https://www.goodreads.com/book/show/1337759.Saman" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 12 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/arus-balik.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Arus Balik</h6><a href="https://www.goodreads.com/book/show/963151.Arus_Balik" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 13 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/partikel.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Partikel</h6><a href="https://www.goodreads.com/book/show/13582635-partikel" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 14 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/edensor.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Edensor</h6><a href="https://www.goodreads.com/book/show/1464757.Edensor" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 15 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/hujan.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Hujan</h6><a href="https://www.goodreads.com/book/show/28446637-hujan" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 16 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/ayah.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Ayah</h6><a href="https://www.goodreads.com/book/show/25498974-ayah"
-                            target="_blank" class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 17 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/laut-bercerita.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Laut Bercerita</h6><a href="https://www.goodreads.com/book/show/36393774-laut-bercerita" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 18 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/gadis-pantai.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h6>Gadis Pantai</h6><a href="https://www.goodreads.com/book/show/735248.Gadis_Pantai"
-                            target="_blank" class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 19 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/atheis.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h6>Atheis</h6><a href="https://www.goodreads.com/book/show/1283619.Atheis"
-                            target="_blank" class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 20 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/bumi.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h6>Bumi</h6><a
-                            href="https://www.goodreads.com/book/show/18759843-bumi" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 21 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/5cm.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h6>5 cm</h6><a
-                            href="https://www.goodreads.com/book/show/1499340.5_cm" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 22 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/padang-bulan.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h6>Padang Bulan</h6><a
-                            href="https://www.goodreads.com/book/show/8460524-padang-bulan" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 23 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/bilangan-FU.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h6>Bilangan FU</h6><a
-                            href="https://www.goodreads.com/book/show/3492825-bilangan-fu" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 24 -->
-            <div class="col-lg-2 col-md-4 col-sm-6">
-                <div class="card book-card h-100"><img src="./foto-perpustakaan/gelombang.jpg"
-                        class="card-img-top">
-                    <div class="card-body">
-                        <h6>Gelombang</h6><a
-                            href="https://www.goodreads.com/book/show/23252584-gelombang" target="_blank"
-                            class="btn btn-primary w-100">Lihat Buku</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- end card daftar buku -->
+    <!-- end card container -->
 
 
 
-    <script>
-        function updateJam() {
-            const now = new Date();
-            const jam = String(now.getHours()).padStart(2, '0');
-            const menit = String(now.getMinutes()).padStart(2, '0');
-            const detik = String(now.getSeconds()).padStart(2, '0');
-            document.getElementById('jam-digital').textContent = `${jam}:${menit}:${detik}`;
-        }
-
-        updateJam();
-        setInterval(updateJam, 1000);
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
