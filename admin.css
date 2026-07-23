@@ -95,3 +95,9 @@ body{
     border-color:#198754;
     box-shadow:0 0 8px rgba(25,135,84,.25);
 }
+
+/* search */
+#searchInput:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, .25);
+}
