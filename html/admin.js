@@ -1,31 +1,21 @@
-const books = [
-    {
-        id: 'book-1',
-        title: "Harry Potter and the Philosopher's Stone",
-        imageUrl: 'https://covers.openlibrary.org/b/isbn/9780747532699-L.jpg',
-        genres: ['Fantasy', 'Young Adult', 'Adventure'],
-        language: 'English'
-    },
-    {
-        id: 'book-2',
-        title: 'The Hobbit',
-        imageUrl: 'https://covers.openlibrary.org/b/id/6979861-L.jpg',
-        genres: ['Fantasy', 'Adventure'],
-        language: 'English'
-    },
-    {
-        id: 'book-3',
-        title: 'Bumi',
-        imageUrl: 'https://covers.openlibrary.org/b/id/10909258-L.jpg',
-        genres: ['Fantasy', 'Adventure'],
-        language: 'Indonesia'
-    }
-];
+async function loadBooks() {
+  try {
+    const booksRes = await fetch('./books.json');
+    const books = await booksRes.json();
+
+    renderTable(books);
+    //console.log(books);
+  } catch (error) {
+    console.error("Gagal mengambil data buku:", error);
+  }
+}
+
+loadBooks();
 
 let editIndex = null;
 
 // Tampilkan data ke tabel
-function renderTable() {
+function renderTable(books) {
     const tbody = document.getElementById('bookTableBody');
     tbody.innerHTML = '';
 
