@@ -102,6 +102,33 @@ body{
     cursor:not-allowed;
 }
 
+.synopsis-cell{
+    max-width:300px;
+    font-size:13px;
+    font-family:inherit;
+    text-align:left;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin:0 auto;
+}
+
+/* tombol aksi (Detail, Edit, Delete) selalu tersusun rapi ke bawah,
+   tidak peduli lebar kolom / ukuran layar */
+.action-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    align-items:stretch;
+}
+
+.action-buttons .btn{
+    width:100%;
+    margin:0 !important; /* override margin-end (me-2) bawaan Bootstrap */
+}
+
 /* search */
 #searchInput:focus {
     border-color: #0d6efd;

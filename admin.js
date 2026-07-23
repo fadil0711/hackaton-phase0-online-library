@@ -122,19 +122,26 @@ function renderTable(data) {
                     <img src="${book.imageUrl}" class="book-image">
                 </td>
                 <td>${book.title}</td>
-                <td class="synopsis-cell">${book.synopsis}</td>
+                <td><div class="synopsis-cell">${book.synopsis}</div></td>
                 <td>${book.genres.join(', ')}</td>
                 <td>${book.language}</td>
                 <td>
-                    <button class="btn btn-warning btn-sm me-2"
-                        onclick="editBook(${index})">
-                        Edit
-                    </button>
+                    <div class="action-buttons">
+                        <button class="btn btn-info btn-sm"
+                            onclick="viewBook(${index})">
+                            Detail
+                        </button>
 
-                    <button class="btn btn-danger btn-sm"
-                        onclick="deleteBook(${index})">
-                        Delete
-                    </button>
+                        <button class="btn btn-warning btn-sm"
+                            onclick="editBook(${index})">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm"
+                            onclick="deleteBook(${index})">
+                            Delete
+                        </button>
+                    </div>
                 </td>
             </tr>
         `;
@@ -154,6 +161,7 @@ document.getElementById('bookForm').addEventListener('submit', function (e) {
         id: document.getElementById('bookId').value,
         title: document.getElementById('bookTitle').value,
         imageUrl: document.getElementById('bookImageUrl').value,
+        synopsis: document.getElementById('bookSynopsis').value,
         genres: document.getElementById('bookGenre').value
             .split(',')        // pisah string "Fantasy, Adventure" jadi array ["Fantasy", " Adventure"]
             .map(g => g.trim()), // hilangkan spasi berlebih di tiap elemen array
@@ -217,6 +225,37 @@ document.getElementById('bookModal').addEventListener('hidden.bs.modal', functio
 
 
 // ===============================================
+// DETAIL — tampilkan semua data buku (termasuk Image URL) di popup
+// ===============================================
+function viewBook(index) {
+    const book = books[index];
+
+    // Ambil elemen tempat isi detail akan ditampilkan
+    const detailBody = document.getElementById('detailBody');
+
+    // Susun semua informasi buku dalam bentuk HTML,
+    // termasuk Image URL yang tidak lagi ditampilkan di tabel utama.
+    detailBody.innerHTML = `
+        <div class="text-center mb-3">
+            <img src="${book.imageUrl}" style="width:120px; border-radius:10px;">
+        </div>
+        <p><strong>ID:</strong> ${book.id}</p>
+        <p><strong>Title:</strong> ${book.title}</p>
+        <p><strong>Image URL:</strong> ${book.imageUrl}</p>
+        <p><strong>Sinopsis:</strong> ${book.synopsis}</p>
+        <p><strong>Genre:</strong> ${book.genres.join(', ')}</p>
+        <p><strong>Language:</strong> ${book.language}</p>
+    `;
+
+    // Tampilkan modal detail secara manual lewat JavaScript
+    const modal = new bootstrap.Modal(
+        document.getElementById('detailModal')
+    );
+    modal.show();
+}
+
+
+// ===============================================
 // EDIT — isi form modal dengan data buku yang mau diedit
 // ===============================================
 function editBook(index) {
@@ -233,6 +272,7 @@ function editBook(index) {
     document.getElementById('bookId').value = book.id;
     document.getElementById('bookTitle').value = book.title;
     document.getElementById('bookImageUrl').value = book.imageUrl;
+    document.getElementById('bookSynopsis').value = book.synopsis;
     document.getElementById('bookGenre').value = book.genres.join(', ');
     document.getElementById('bookLanguage').value = book.language;
 
