@@ -4,13 +4,16 @@ body{
     padding:0;
     font-family:Arial, Helvetica, sans-serif;
 
-    /* gambar background */
     background:url("foto-perpustakaan/background-login.avif");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
 
     min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 /* Navbar */
@@ -19,10 +22,10 @@ body{
     backdrop-filter:blur(10px);
 }
 
-.navbar .nav-link,
+/* .navbar .nav-link,
 .navbar-brand{
     /* color:white!important; */
-}
+} */
 
 /* Container */
 .login-container{
@@ -30,7 +33,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:85vh;
+    margin-top: 15px;
 }
 
 /* Login Card */
@@ -105,4 +108,42 @@ body{
 /* Checkbox */
 input[type="checkbox"]{
     accent-color:#00d4ff;
+}
+
+/* ==========================
+   LOGO GLASS EFFECT
+========================== */
+
+.logo-section{
+    width: fit-content;
+    margin: 50px auto 20px;
+
+    padding: 20px 50px;
+
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,.25);
+
+    text-align: center;
+}
+
+.logo-title{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.4);
+}
+
+.logo-subtitle{
+    color: rgba(255,255,255,.9);
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0;
 }
