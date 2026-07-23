@@ -1,0 +1,167 @@
+[
+  {
+    "id": "pub-1",
+    "name": "Bloomsbury",
+    "country": "United Kingdom"
+  },
+  {
+    "id": "pub-2",
+    "name": "Houghton Mifflin Harcourt",
+    "country": "United States"
+  },
+  {
+    "id": "pub-3",
+    "name": "Signet Classics",
+    "country": "United States"
+  },
+  {
+    "id": "pub-4",
+    "name": "Harper Perennial",
+    "country": "United States"
+  },
+  {
+    "id": "pub-5",
+    "name": "Penguin Classics",
+    "country": "United Kingdom"
+  },
+  {
+    "id": "pub-6",
+    "name": "Scribner",
+    "country": "United States"
+  },
+  {
+    "id": "pub-7",
+    "name": "CreateSpace",
+    "country": "United States"
+  },
+  {
+    "id": "pub-8",
+    "name": "Vintage Classics",
+    "country": "Russia"
+  },
+  {
+    "id": "pub-9",
+    "name": "Little, Brown and Company",
+    "country": "United States"
+  },
+  {
+    "id": "pub-10",
+    "name": "Simon & Schuster",
+    "country": "United States"
+  },
+  {
+    "id": "pub-11",
+    "name": "HarperCollins",
+    "country": "United Kingdom"
+  },
+  {
+    "id": "pub-12",
+    "name": "HarperOne",
+    "country": "Brazil"
+  },
+  {
+    "id": "pub-13",
+    "name": "Anchor Books",
+    "country": "United States"
+  },
+  {
+    "id": "pub-14",
+    "name": "Pocket Books",
+    "country": "United States"
+  },
+  {
+    "id": "pub-15",
+    "name": "Vintage Crime",
+    "country": "Sweden"
+  },
+  {
+    "id": "pub-16",
+    "name": "Crown Publishing",
+    "country": "United States"
+  },
+  {
+    "id": "pub-17",
+    "name": "Scholastic Press",
+    "country": "United States"
+  },
+  {
+    "id": "pub-18",
+    "name": "Katherine Tegen Books",
+    "country": "United States"
+  },
+  {
+    "id": "pub-19",
+    "name": "Dutton Books",
+    "country": "United States"
+  },
+  {
+    "id": "pub-20",
+    "name": "Riverhead Books",
+    "country": "Afghanistan"
+  },
+  {
+    "id": "pub-21",
+    "name": "Harcourt",
+    "country": "Canada"
+  },
+  {
+    "id": "pub-22",
+    "name": "Knopf Books",
+    "country": "Australia"
+  },
+  {
+    "id": "pub-23",
+    "name": "Harper",
+    "country": "Israel"
+  },
+  {
+    "id": "pub-24",
+    "name": "Random House",
+    "country": "United States"
+  },
+  {
+    "id": "pub-25",
+    "name": "Avery",
+    "country": "United States"
+  },
+  {
+    "id": "pub-26",
+    "name": "Plata Publishing",
+    "country": "United States"
+  },
+  {
+    "id": "pub-27",
+    "name": "Farrar, Straus and Giroux",
+    "country": "Israel"
+  },
+  {
+    "id": "pub-28",
+    "name": "Crown Business",
+    "country": "United States"
+  },
+  {
+    "id": "pub-29",
+    "name": "Ace Books",
+    "country": "United States"
+  },
+  {
+    "id": "pub-30",
+    "name": "Bantam Spectra",
+    "country": "United States"
+  },
+  {
+    "id": "pub-31",
+    "name": "Tor Books",
+    "country": "United States"
+  },
+  {
+    "id": "pub-32",
+    "name": "Vintage International",
+    "country": "Japan"
+  },
+  {
+    "id": "pub-33",
+    "name": "Mariner Books",
+    "country": "France"
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "id": "rev-1",
+    "bookId": "book-1",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-2",
+    "bookId": "book-1",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-3",
+    "bookId": "book-2",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-4",
+    "bookId": "book-2",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-5",
+    "bookId": "book-3",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-6",
+    "bookId": "book-3",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-7",
+    "bookId": "book-4",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-8",
+    "bookId": "book-4",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-9",
+    "bookId": "book-5",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-10",
+    "bookId": "book-5",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-11",
+    "bookId": "book-6",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-12",
+    "bookId": "book-6",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-13",
+    "bookId": "book-7",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-14",
+    "bookId": "book-7",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-15",
+    "bookId": "book-8",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-16",
+    "bookId": "book-8",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-17",
+    "bookId": "book-9",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-18",
+    "bookId": "book-9",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-19",
+    "bookId": "book-10",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-20",
+    "bookId": "book-10",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-21",
+    "bookId": "book-11",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-22",
+    "bookId": "book-11",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-23",
+    "bookId": "book-12",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-24",
+    "bookId": "book-12",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-25",
+    "bookId": "book-13",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-26",
+    "bookId": "book-13",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-27",
+    "bookId": "book-14",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-28",
+    "bookId": "book-14",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-29",
+    "bookId": "book-15",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-30",
+    "bookId": "book-15",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-31",
+    "bookId": "book-16",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-32",
+    "bookId": "book-16",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-33",
+    "bookId": "book-17",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-34",
+    "bookId": "book-17",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-35",
+    "bookId": "book-18",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-36",
+    "bookId": "book-18",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-37",
+    "bookId": "book-19",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-38",
+    "bookId": "book-19",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-39",
+    "bookId": "book-20",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-40",
+    "bookId": "book-20",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-41",
+    "bookId": "book-21",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-42",
+    "bookId": "book-21",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-43",
+    "bookId": "book-22",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-44",
+    "bookId": "book-22",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-45",
+    "bookId": "book-23",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-46",
+    "bookId": "book-23",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-47",
+    "bookId": "book-24",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-48",
+    "bookId": "book-24",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-49",
+    "bookId": "book-25",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-50",
+    "bookId": "book-25",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-51",
+    "bookId": "book-26",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-52",
+    "bookId": "book-26",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-53",
+    "bookId": "book-27",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-54",
+    "bookId": "book-27",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-55",
+    "bookId": "book-28",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-56",
+    "bookId": "book-28",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-57",
+    "bookId": "book-29",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-58",
+    "bookId": "book-29",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-59",
+    "bookId": "book-30",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-60",
+    "bookId": "book-30",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-61",
+    "bookId": "book-31",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-62",
+    "bookId": "book-31",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-63",
+    "bookId": "book-32",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-64",
+    "bookId": "book-32",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-65",
+    "bookId": "book-33",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-66",
+    "bookId": "book-33",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-67",
+    "bookId": "book-34",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-68",
+    "bookId": "book-34",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-69",
+    "bookId": "book-35",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-70",
+    "bookId": "book-35",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-71",
+    "bookId": "book-36",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-72",
+    "bookId": "book-36",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-73",
+    "bookId": "book-37",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-74",
+    "bookId": "book-37",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-75",
+    "bookId": "book-38",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-76",
+    "bookId": "book-38",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-77",
+    "bookId": "book-39",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-78",
+    "bookId": "book-39",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-79",
+    "bookId": "book-40",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-80",
+    "bookId": "book-40",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-81",
+    "bookId": "book-41",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-82",
+    "bookId": "book-41",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-83",
+    "bookId": "book-42",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-84",
+    "bookId": "book-42",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-85",
+    "bookId": "book-43",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-86",
+    "bookId": "book-43",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-87",
+    "bookId": "book-44",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-88",
+    "bookId": "book-44",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-89",
+    "bookId": "book-45",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  },
+  {
+    "id": "rev-90",
+    "bookId": "book-45",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-91",
+    "bookId": "book-46",
+    "reviewer": "Fajar",
+    "comment": "Recommended buat yang suka genre ini.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-92",
+    "bookId": "book-46",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-93",
+    "bookId": "book-47",
+    "reviewer": "Putri",
+    "comment": "Karakter-karakternya kuat, world-buildingnya rapi.",
+    "rating": 5
+  },
+  {
+    "id": "rev-94",
+    "bookId": "book-47",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-95",
+    "bookId": "book-48",
+    "reviewer": "Andi",
+    "comment": "Salah satu buku terbaik yang pernah aku baca!",
+    "rating": 5
+  },
+  {
+    "id": "rev-96",
+    "bookId": "book-48",
+    "reviewer": "Dewi",
+    "comment": "Bikin baper, endingnya nempel banget.",
+    "rating": 5
+  },
+  {
+    "id": "rev-97",
+    "bookId": "book-49",
+    "reviewer": "Sari",
+    "comment": "Ceritanya seru banget, susah berhenti baca.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-98",
+    "bookId": "book-49",
+    "reviewer": "Rian",
+    "comment": "Worth it banget buat dibaca ulang.",
+    "rating": 4.5
+  },
+  {
+    "id": "rev-99",
+    "bookId": "book-50",
+    "reviewer": "Budi",
+    "comment": "Alurnya bagus tapi agak lambat di awal.",
+    "rating": 4
+  },
+  {
+    "id": "rev-100",
+    "bookId": "book-50",
+    "reviewer": "Nadia",
+    "comment": "Ceritanya berat tapi maknanya dalam.",
+    "rating": 4
+  }
+]
