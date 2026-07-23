@@ -4,127 +4,102 @@
 <title>Halaman Admin</title>
 <link rel="stylesheet" href="./admin.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-
     <!-- CRUD -->
     <div class="container mt-5">
-
         <div class="card shadow-lg p-4">
-
             <h1 class="text-center mb-4">
-                CRUD Buku
+                Book Management System
             </h1>
-
             <div class="text-center mb-4">
-
-                <button class="btn btn-success">
+                <button class="btn btn-success px-4" data-bs-toggle="modal" data-bs-target="#bookModal">
                     <i class="bi bi-plus-circle"></i>
                     Add Book
                 </button>
-
             </div>
-
             <div class="row mb-3">
-
                 <div class="col-md-4">
                     <input type="text" class="form-control" placeholder="Cari Buku...">
                 </div>
-
             </div>
-
             <table class="table table-hover align-middle">
-
                 <thead class="table-dark">
-
                     <tr>
-
                         <th>ID</th>
-
                         <th>Image</th>
-
                         <th>Image URL</th>
-
                         <th>Title</th>
-
                         <th>Genre</th>
-
                         <th>Language</th>
-
                         <th>Action</th>
-
                     </tr>
-
                 </thead>
-
-                <tbody>
-
-                    <tr>
-
-                        <td>book-1</td>
-
-                        <td>
-
-                            <img src="https://covers.openlibrary.org/b/isbn/9780747532699-L.jpg" width="70">
-
-                        </td>
-
-                        <td>
-
-                            https://covers.openlibrary.org/b/isbn/9780747532699-L.jpg
-
-                        </td>
-
-                        <td>
-
-                            Harry Potter and the Philosopher's Stone
-
-                        </td>
-
-                        <td>
-
-                            Fantasy, Young Adult, Adventure
-
-                        </td>
-
-                        <td>
-
-                            English
-
-                        </td>
-
-                        <td>
-
-                            <button class="btn btn-warning btn-sm">
-
-                                Edit
-
-                            </button>
-
-                            <button class="btn btn-danger btn-sm">
-
-                                Delete
-
-                            </button>
-
-                        </td>
-
-                    </tr>
-
+                <tbody id="bookTableBody">
+                    <!-- Diisi otomatis oleh JavaScript -->
                 </tbody>
-
             </table>
 
+            <!-- Modal Add/Edit Book -->
+            <div class="modal fade" id="bookModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                                <i class="bi bi-book-half"></i>
+                                Add / Edit Book
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="bookForm">
+                                <div class="mb-3">
+                                    <label class="form-label">Book ID</label>
+                                    <input type="text" id="bookId" class="form-control" placeholder="book-1" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Title</label>
+                                    <input type="text" id="bookTitle" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Image URL</label>
+                                    <input type="url" id="bookImageUrl" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Genre</label>
+                                    <input type="text" id="bookGenre" class="form-control"
+                                        placeholder="Fantasy, Adventure" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Language</label>
+                                    <select id="bookLanguage" class="form-select" required>
+                                        <option value="">Pilih Bahasa</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="English">English</option>
+                                        <option value="Japanese">Japanese</option>
+                                        <option value="Korean">Korean</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">
+                                    <i class="bi bi-save"></i>
+                                    Save Book
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
     <!-- end CRUD -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
 </body>
 
 </html>

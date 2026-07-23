@@ -134,6 +134,7 @@ function deleteBook(index) {
 
 // Pertama kali halaman dibuka
 renderTable();
+
 2. Yang harus ditambahkan di file HTML
 A. Tambahkan link dashboard.js
 
