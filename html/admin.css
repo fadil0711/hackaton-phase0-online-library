@@ -1,85 +1,97 @@
+/* ===========================
+   CRUD BOOK TABLE
+=========================== */
+
 body{
-
-    background:#f4f4f4;
-
+    background:#f4f6f9;
 }
 
 .card{
-
     border:none;
-
-    border-radius:15px;
-
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-table{
-
-    font-size:15px;
-
+.table{
+    background:white;
 }
 
-table img{
+.table th{
+    text-align:center;
+    vertical-align:middle;
+}
 
+.table td{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table tbody tr:hover{
+    background:#f8f9fa;
+    transition:.2s;
+}
+
+/* gambar buku */
+.book-image{
     width:70px;
-
-    border-radius:8px;
-
+    height:100px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
 }
 
+/* url panjang */
+.url-cell{
+    max-width:250px;
+    word-break:break-all;
+    font-size:13px;
+    color:#0d6efd;
+}
+
+/* tombol */
 .btn-success{
-
-    padding:10px 25px;
-
-    font-weight:bold;
-
+    border-radius:10px;
+    font-weight:600;
 }
 
 .btn-warning{
-
     color:white;
-
+    border-radius:8px;
 }
 
-td{
-
-    vertical-align:middle;
-
+.btn-danger{
+    border-radius:8px;
 }
 
-tbody tr:hover{
-
-    background:#f8f8f8;
-
+/* modal */
+.modal-content{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
 }
 
-th{
-
-    text-align:center;
-
+.modal-header{
+    background:linear-gradient(135deg,#198754,#157347);
+    color:white;
+    border-bottom:none;
 }
 
-td{
-
-    text-align:center;
-
+.modal-title{
+    font-weight:bold;
 }
 
-td:nth-child(4){
-
-    text-align:left;
-
+.btn-close{
+    filter:invert(1);
 }
 
-td:nth-child(5){
-
-    text-align:left;
-
+.form-control,
+.form-select{
+    border-radius:10px;
+    padding:10px;
 }
 
-td:nth-child(3){
-
-    max-width:250px;
-
-    word-break:break-all;
-
+.form-control:focus,
+.form-select:focus{
+    border-color:#198754;
+    box-shadow:0 0 8px rgba(25,135,84,.25);
 }
